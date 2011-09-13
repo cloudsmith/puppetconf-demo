@@ -28,13 +28,14 @@ if(count($results) < 1)
 	echo '<div><p>No results found</p></div>';
 	
 $odd = true;
+echo '<table><tr><td class="left">';
 foreach($results as $result){
 	$oddEven = $odd ? "odd" : "even";
 	$odd = ! $odd;
 	echo '<div class="twitter_status '.$oddEven.'">';
 	echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
 	// replace embedded URLs
-	$text_n = preg_replace('/https?:\/\/[^\s]+/i', '<a href="$0">$0</a>', $result->text); // toLink($result->text);
+	$text_n = preg_replace('/https?:\/\/[^\s]+/i', '<a href="$0" target="output">$0</a>', $result->text); // toLink($result->text);
 	echo $text_n;
 	echo '<div class="twitter_small">';
 	echo '<strong>From:</strong> <a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
@@ -43,6 +44,7 @@ foreach($results as $result){
 	echo '</div>';
 	}
 }
+echo '</td><td class="right"><iframe class="outputFrame" name="output"></td></tr></table>';
 ?>
 </body>
 </html>

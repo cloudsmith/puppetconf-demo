@@ -25,7 +25,9 @@ background-color:#ddd;
 .even {
 background-color:#efefef;
 }
-
+.outputFrame {
+background-color=pink;
+}
 .twitter_image{
 float:left;
 margin-right:14px;
