@@ -9,6 +9,7 @@ $twitter_query = $_GET['twitterq'];
 $search = new TwitterSearch($twitter_query);
 $results = $search->results();
 
+echo '<div><p>Search results:</p></div>';
 foreach($results as $result){
 echo '<div class="twitter_status">';
 echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
