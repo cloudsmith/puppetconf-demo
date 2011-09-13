@@ -30,8 +30,8 @@ if(count($results) < 1)
 $odd = true;
 echo '<table width="100%"><tr><td class="left" width="40%>';
 foreach($results as $result){
-	$oddEven = $odd ? "odd" : "even";
 	$odd = ! $odd;
+	$oddEven = $odd ? "odd" : "even";
 	echo '<div class="twitter_status '.$oddEven.'">';
 	echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
 	// replace embedded URLs
