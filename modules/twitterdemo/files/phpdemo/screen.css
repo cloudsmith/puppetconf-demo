@@ -40,3 +40,6 @@ font-size:9px;
 padding-top:4px;
 color:#999;
 }
+iframe.outputFrame {
+overflow:visible;
+}
