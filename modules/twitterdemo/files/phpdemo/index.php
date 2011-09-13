@@ -3,7 +3,7 @@
 <input name="Search" type="submit" value="Search" />
 </form>
 <?php 
-include('TwitterSearch.phps');
+include('TwitterSearch.php');
 echo '<div><p>Before results:</p></div>';
 if($_GET['twitterq']){
 $twitter_query = $_GET['twitterq'];
