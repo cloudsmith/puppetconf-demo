@@ -24,8 +24,11 @@ background-color:#ddd;
 .even {
 background-color:#efefef;
 }
+table.master {
+width=1524px;
+}
 td.left {
-width=400px;
+width=500px;
 }
 .outputFrame {
 background-color=pink;
