@@ -1,5 +1,5 @@
 node 'node1' {
-	pacakge { "httpd":
+	package { "httpd":
 		ensure => present,
 	}
 }
