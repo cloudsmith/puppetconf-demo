@@ -44,7 +44,7 @@ foreach($results as $result){
 	echo '</div>';
 	}
 }
-echo '</td><td class="right" align="top"><iframe class="outputFrame" name="output" align="top"></td></tr></table>';
+echo '</td><td class="right" valign="top" height="100%" width="100%"><iframe class="outputFrame" name="output" align="top"></td></tr></table>';
 ?>
 </body>
 </html>
