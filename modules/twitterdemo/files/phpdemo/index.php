@@ -20,7 +20,7 @@ foreach($results as $result){
 	echo $result->text;
 	echo '<BR/>raw text<BR/>';
 	$text_n = preg_replace('#https?://(.*?)\s#i', '<a href="http://$1">$1</a>', $result->text); // toLink($result->text);
-//	echo $text_n;
+	echo $text_n;
 	echo '<div class="twitter_small">';
 	echo '<strong>From:</strong> <a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
 	echo '<strong>at:</strong> '.$result->created_at;
