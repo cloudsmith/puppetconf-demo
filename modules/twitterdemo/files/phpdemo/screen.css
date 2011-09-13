@@ -24,7 +24,7 @@ background-color:#ddd;
 .even {
 background-color:#efefef;
 }
-id.left {
+td.left {
 width=400px;
 }
 .outputFrame {
