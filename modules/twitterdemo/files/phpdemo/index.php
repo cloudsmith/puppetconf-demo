@@ -27,8 +27,11 @@ echo '<div><p>Search type is: '.$search->type.'</p></div>';
 $results = $search->results();
 
 echo '<div><p>Search results: '.count($results).'</p></div>';
+$odd = true;
 foreach($results as $result){
-	echo '<div class="twitter_status">';
+	$oddEven = $odd ? "odd" : "even";
+	$odd = ! $odd;
+	echo '<div class="twitter_status '.$oddEven.'">';
 	echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
 	// replace embedded URLs
 	$text_n = preg_replace('/https?:\/\/[^\s]+/i', '<a href="http://$0">$0</a>', $result->text); // toLink($result->text);
