@@ -13,19 +13,19 @@ echo '<div><p>Search is: '.$search.'</p></div>';
 echo '<div><p>Search type is: '.$search->type.'</p></div>';
 $results = $search->results();
 
-echo '<div><p>Search results:'.count($results).'</p></div>';
+echo '<div><p>Search results: '.count($results).'</p></div>';
 foreach($results as $result){
-echo '<div class="twitter_status">';
-echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
-echo $result->text;
-echo '<BR/>raw text<BR/>';
-$text_n = toLink($result->text);
-echo $text_n;
-echo '<div class="twitter_small">';
-echo '<strong>From:</strong> <a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
-echo '<strong>at:</strong> '.$result->created_at;
-echo '</div>';
-echo '</div>';
-}
+	echo '<div class="twitter_status">';
+	echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
+	echo $result->text;
+	echo '<BR/>raw text<BR/>';
+//	$text_n = toLink($result->text);
+//	echo $text_n;
+	echo '<div class="twitter_small">';
+	echo '<strong>From:</strong> <a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
+	echo '<strong>at:</strong> '.$result->created_at;
+	echo '</div>';
+	echo '</div>';
+	}
 }
 ?>
