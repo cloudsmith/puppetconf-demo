@@ -28,7 +28,7 @@ if(count($results) < 1)
 	echo '<div><p>No results found</p></div>';
 	
 $odd = true;
-echo '<table width="100%"><tr><td class="left" width="40%>';
+echo '<table width="100%"><tr><td class="left">';
 foreach($results as $result){
 	$odd = ! $odd;
 	$oddEven = $odd ? "odd" : "even";
@@ -44,7 +44,7 @@ foreach($results as $result){
 	echo '</div>';
 	}
 }
-echo '</td><td class="right" valign="top" height="100%" width="60%"><iframe class="outputFrame" name="output" align="top"></td></tr></table>';
+echo '</td><td class="right" valign="top" height="100%"><iframe class="outputFrame" name="output" align="top"></td></tr></table>';
 ?>
 </body>
 </html>

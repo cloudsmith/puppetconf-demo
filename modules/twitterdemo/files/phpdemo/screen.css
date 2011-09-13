@@ -24,6 +24,9 @@ background-color:#ddd;
 .even {
 background-color:#efefef;
 }
+id.left {
+width=400px;
+}
 .outputFrame {
 background-color=pink;
 }
