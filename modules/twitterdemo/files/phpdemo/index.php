@@ -4,9 +4,11 @@
 </form>
 <?php 
 include('TwitterSearch.php');
+echo '<div><p>Before results:</p></div>';
 if($_GET['twitterq']){
 $twitter_query = $_GET['twitterq'];
 $search = new TwitterSearch($twitter_query);
+echo '<div><p>Search is: $search;</p></div>';
 $results = $search->results();
 
 echo '<div><p>Search results:</p></div>';
