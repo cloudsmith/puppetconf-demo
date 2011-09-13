@@ -10,6 +10,7 @@ $twitter_query = $_GET['twitterq'];
 echo '<div><p>Query is: '.$twitter_query.'</p></div>';
 $search = new TwitterSearch($twitter_query);
 echo '<div><p>Search is: '.$search.'</p></div>';
+echo '<div><p>Search type is: '.$search->type.'</p></div>';
 $results = $search->results();
 
 echo '<div><p>Search results:</p></div>';
