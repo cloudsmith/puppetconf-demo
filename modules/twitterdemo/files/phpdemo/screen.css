@@ -25,14 +25,12 @@ background-color:#ddd;
 background-color:#efefef;
 }
 table.master {
-width=1524px;
+width:1524px;
 }
 td.left {
-width=500px;
+width:500px;
 }
-.outputFrame {
-background-color=pink;
-}
+
 .twitter_image{
 float:left;
 margin-right:14px;
