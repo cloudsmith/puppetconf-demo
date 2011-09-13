@@ -29,19 +29,22 @@ class newrelic::php($application_name = "Demo Test") {
 		command => "newrelic-install install",
 		path => ["/usr/bin"],
 		creates => "/usr/$arch_libdir/php/modules/newrelic.so",
-#		environment => ["NR_INSTALL_SILENT=yes"],
 		subscribe => Package["newrelic-php5", "php", "php-cli"],
 	}
 
 	file { "/etc/newrelic/newrelic.cfg":
 		ensure => present,
 		content => template("newrelic/newrelic.cfg.erb"),
+		owner => root,
+		group => root,
 		subscribe => Exec["newrelic-install"],
 	}
 
 	file { "/etc/php.d/newrelic.ini":
 		ensure => present,
 		content => template("newrelic/newrelic.ini.erb"),
+		owner => root,
+		group => root,
 		subscribe => Exec["newrelic-install"],
 		notify => Service["httpd"],
 	}
