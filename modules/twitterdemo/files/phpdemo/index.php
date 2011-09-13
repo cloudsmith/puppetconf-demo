@@ -21,6 +21,7 @@ if($_GET['twitterq']){
 $twitter_query = $_GET['twitterq'];
 echo '<div><p>Query is: '.$twitter_query.'</p></div>';
 $search = new TwitterSearch($twitter_query);
+$search->rpp(100);
 $results = $search->results();
 
 if(count($results) < 1)
