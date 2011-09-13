@@ -17,8 +17,7 @@ echo '<div><p>Search results: '.count($results).'</p></div>';
 foreach($results as $result){
 	echo '<div class="twitter_status">';
 	echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
-	echo $result->text;
-	echo '<BR/>raw text<BR/>';
+	// replace embedded URLs
 	$text_n = preg_replace('/https?:\/\/[^\s]+/i', '<a href="http://$0">$0</a>', $result->text); // toLink($result->text);
 	echo $text_n;
 	echo '<div class="twitter_small">';
