@@ -1,37 +1,58 @@
 .twitter_container{
 
 color:#444;
-font-size:12px;
+font-size:11px;
+font-family:"Verdana";
 width:600px;
 margin: 0 auto;
 
 }
-.twitter_container a{
 
+.twitter_container a{
 color:#0066CC;
 font-weight:bold;
 
 }
 .twitter_status{
-
 height:60px;
 padding:6px;
 border-bottom:solid 1px #DEDEDE;
 
 }
-.twitter_image{
+.odd {
+background-color:#ddd;
+}
+.even {
+background-color:#efefef;
+}
+table.master {
+width:1524px;
+}
+td.left {
+width:450px;
+vertical-align:top;
+}
 
+.twitter_image{
 float:left;
 margin-right:14px;
 border:solid 2px #DEDEDE;
 width:50px;
 height:50px;
-
 }
-.twitter_posted_at{
-
+div.twitter_status {
 font-size:11px;
+font-family:"Verdana";
+}
+div.twitter_small{
+font-size:9px;
 padding-top:4px;
 color:#999;
-
+}
+iframe.outputFrame {
+overflow:visible;
+width:100%;
+height:100%;
+min-height:800px;
+min-width:1024px;
 }
