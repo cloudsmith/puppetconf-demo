@@ -19,7 +19,7 @@ echo '<div class="twitter_status">';
 echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
 $text_n = toLink($result->text);
 echo $text_n;
-echo '<BR/>raw text<BR/>'
+echo '<BR/>raw text<BR/>';
 echo $result->text;
 echo '<div class="twitter_small">';
 echo '<strong>From:</strong> <a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
