@@ -28,7 +28,7 @@ if(count($results) < 1)
 	echo '<div><p>No results found</p></div>';
 	
 $odd = true;
-echo '<table width="100%"><tr><td class="left">';
+echo '<table id="master"><tr><td class="left">';
 foreach($results as $result){
 	$odd = ! $odd;
 	$oddEven = $odd ? "odd" : "even";
