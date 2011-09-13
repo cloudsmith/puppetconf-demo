@@ -17,16 +17,15 @@
 </form>
 <?php 
 include('TwitterSearch.phps');
-echo '<div><p>Before results:</p></div>';
 if($_GET['twitterq']){
 $twitter_query = $_GET['twitterq'];
 echo '<div><p>Query is: '.$twitter_query.'</p></div>';
 $search = new TwitterSearch($twitter_query);
-echo '<div><p>Search is: '.$search.'</p></div>';
-echo '<div><p>Search type is: '.$search->type.'</p></div>';
 $results = $search->results();
 
-echo '<div><p>Search results: '.count($results).'</p></div>';
+if(count($results) < 1)
+	echo '<div><p>No results found</p></div>';
+	
 $odd = true;
 foreach($results as $result){
 	$oddEven = $odd ? "odd" : "even";
