@@ -1,4 +1,4 @@
-name 'newrelic'
+name 'cloudsmith-newrelic'
 version '0.1.0'
 
 author 'mruzicka'
