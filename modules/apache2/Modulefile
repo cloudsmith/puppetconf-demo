@@ -1,4 +1,4 @@
-name 'apache2'
+name 'cloudsmith-apache2'
 version '0.1.0'
 
 author 'mruzicka'
