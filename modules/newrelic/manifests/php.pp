@@ -1,4 +1,4 @@
-class newrelic::php($application_name = "Demo Test") {
+class newrelic::php($license_key, $application_name = "PHP application") {
 	include php5
 
 	$is64bitArch = $architecture ? {
@@ -53,6 +53,5 @@ class newrelic::php($application_name = "Demo Test") {
 		enable => true,
 		ensure => running,
 		subscribe => [Package["newrelic-php5"], File["/etc/newrelic/newrelic.cfg"]],
-		notify => Service["httpd"],
 	}
 }

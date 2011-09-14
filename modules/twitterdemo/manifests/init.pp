@@ -1,5 +1,5 @@
 class twitterdemo($demo_doc_root = "/var/www/twitterdemo", $demo_alias = "demo") {
-	include newrelic::php
+	include php5
 
 	file { "$demo_doc_root":
 		ensure => present,
