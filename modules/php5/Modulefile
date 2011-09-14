@@ -1,4 +1,4 @@
-name 'php5'
+name 'cloudsmith-php5'
 version '0.1.0'
 
 author 'mruzicka'
