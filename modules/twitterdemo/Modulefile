@@ -1,0 +1,9 @@
+name 'twitterdemo'
+version '0.1.0'
+
+author 'mruzicka'
+license ''
+project_page ''
+source ''
+summary 'TwitterDemo php application'
+description ''
