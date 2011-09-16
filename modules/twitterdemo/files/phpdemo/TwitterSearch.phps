@@ -25,7 +25,7 @@ class TwitterSearch {
      * Recommend setting a user-agent so Twitter knows how to contact you inc case of abuse. Include your email
      * @var string
      */
-    var $user_agent='';
+    var $user_agent='twitterdemo';
     
     /**
      * @var string
