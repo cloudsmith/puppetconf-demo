@@ -7,10 +7,10 @@ class newrelic::php($license_key, $application_name = "PHP application") {
 	}
 
 	if $is64bitArch {
-		$arch_repo_path = "i386"
+		$arch_repo_path = "x86_64"
 		$arch_libdir = "lib64"
 	} else {
-		$arch_repo_path = "x86_64"
+		$arch_repo_path = "i386"
 		$arch_libdir = "lib"
 	}
 
