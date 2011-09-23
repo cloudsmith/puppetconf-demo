@@ -26,8 +26,7 @@ class newrelic::php($license_key, $application_name = "PHP application") {
 	}
 
 	exec { "newrelic-install":
-		command => "newrelic-install install",
-		path => ["/usr/bin"],
+		command => "/usr/bin/newrelic-install install",
 		creates => "/usr/$arch_libdir/php/modules/newrelic.so",
 		subscribe => Package["newrelic-php5", "php", "php-cli"],
 	}
